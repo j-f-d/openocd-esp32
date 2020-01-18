@@ -35,7 +35,9 @@
 #include <libproc.h>
 #endif
 #ifdef HAVE_SYS_SYSCTL_H
+#ifndef __linux
 #include <sys/sysctl.h>
+#endif
 #endif
 #if IS_WIN32 && !IS_CYGWIN
 #include <windows.h>
